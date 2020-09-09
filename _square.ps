@@ -1,0 +1,25 @@
+%!PS
+
+40 40 scale
+
+/newSquare {
+    newpath
+    0 0 moveto
+    0 1  rlineto
+    1 0  rlineto
+    0 -1 rlineto
+    -1 0 rlineto
+    setrgbcolor
+    fill
+} def
+
+5 5 translate
+0 0 1 newSquare
+
+1 0 translate
+1 1 1 newSquare
+
+1 0 translate
+1 0 0 newSquare
+
+

@@ -1,0 +1,18 @@
+%!PS
+
+% Set n 
+/n 2 def
+
+/Times-Roman findfont 20 scalefont setfont
+100 100 moveto
+
+/fac {
+    dup 1 gt {
+        dup 1 sub fac mul
+    } if
+} def
+
+% Print the answer
+n fac (  ) cvs show
+
+showpage
